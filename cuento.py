@@ -1,16 +1,14 @@
 paginas = [
-    "erace una vez....."
+    "Pagina 0 ) erace una vez... \n ¿Que quieres hacer? \n1... \n2... \n3...",
+    "Pagina 1 ) erace una vez... \n ¿Que quieres hacer? \n1... \n2... \n3...",
+    "Pagina 2 ) erace una vez... \n ¿Que quieres hacer? \n1... \n2... \n3...",
 ]
 
 
+def showPagina(NumPagina):
+    text =paginas[NumPagina ]
+    print(text)
+    respuesta = input()
+    showPagina(int(respuesta))
 
-text = " sfjalfhedfnedbgew9iugbeuibvegibe \n iueh fuehg "
-print(text)
-
-print("¿que quieres hacer?")
-
-print ("1...")
-print ("2...")
-print ("3...")
-
-respuesta = input()
+showPagina(0)
